@@ -65,7 +65,7 @@
       checkNotifyAgree();
       function checkNotifyAgree() {
         if (localStorage.getItem('agree-notify') == null || localStorage.getItem('agree-notify') == '' || localStorage.getItem('agree-notify') != '1') {
-          return window.location.href = "/Notify.html";
+          return window.location.href = appUrl + "Notify.html";
         }
       }
       //check ios version      
@@ -114,7 +114,7 @@
         getAndroidVersion(); //"4.2.1"
         var version = parseInt(getAndroidVersion(), 10); //4
         if (!isNaN(version) && version < 7) {
-          return window.location.href = "/UpdateAndroid.html";
+          return window.location.href = appUrl + "UpdateAndroid.html";
         }
       }
 
