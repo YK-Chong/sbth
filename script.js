@@ -1,5 +1,5 @@
 const apiDomain = "https://api-sbth.thebluelobby.com/";
-const appUrl = "https://kobecheah.github.io/WebSimeDarby/";
+const appUrl = "https://yk-chong.github.io/sbth//";
 let coordinate = null;
 
 function redirectIfNoLoginRecord() {
