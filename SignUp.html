@@ -51,12 +51,30 @@
               style="padding: 0px;">
               <div class="u-form-group u-label-none">
                 <label for="name-e9a0" class="u-label"></label>
-                <input type="text" id="date-e9a0" name="dateofbirth" pseudo="-webkit-datetime-edit"
+                <!-- <input type="text" id="date-e9a0" name="dateofbirth" 
                   class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
-                  required="required" max="31-12-2030" style="text-align: left; min-width: 100%;max-width: 100%;" placeholder="Date of Birth"
+                  required="required" max="31-12-2030"  placeholder="Date of Birth"
                   onmouseover="((this.type='date'))" onfocus="((this.type='date'))" onclick="(this.type='date')"
                   onmouseenter="(this.type='date')" onmousedown="(this.type='date')" onkeydown="(this.type='date')"
-                  onkeypress="(this.type='date')" onforminput="(this.type='date')" onblur="(this.type='text')">
+                  onkeypress="(this.type='date')" onforminput="(this.type='date')" onblur="(this.type='text')"> -->
+                  <script>
+                    function ChangeToDate(){
+                      document.getElementById("date-e9a0").type = 'date';
+                    }
+
+                    function ChangeToText(){
+                      document.getElementById("date-e9a0").type = 'text';
+                    }
+                  </script>
+                  <style>
+                    input::-webkit-date-and-time-value{ height: 100%; margin: auto; }
+                  </style>
+                  <input type="text" id="date-e9a0" name="dateofbirth" 
+                  class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
+                  required="required" max="31-12-2030"  placeholder="Date of Birth"
+                  onmouseover="ChangeToDate()" onfocus="ChangeToDate()" onclick="ChangeToDate()"
+                  onmouseenter="ChangeToDate()" onmousedown="ChangeToDate()" onkeydown="ChangeToDate()"
+                  onkeypress="ChangeToDate()" onforminput="ChangeToDate()" onblur="ChangeToText()"> 
                 <div id="dobError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px; min-width: 10%;"
                   class="error-message-email"></div>
               </div>
