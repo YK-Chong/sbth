@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>SignUp</title>
+  <link rel="stylesheet" href="nicepage.css" media="screen">
+  <link rel="stylesheet" href="SignUp.css" media="screen">
+  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="SignUp">
+  <meta property="og:type" content="website">
+  <script src="./script.js"></script>
+</head>
+
+<body class="u-body u-xl-mode" data-lang="en">
+  <div class="WrapBody">
+    <div id='treasure-hunt-content' style="display: block">
+      <section class="u-clearfix u-section-1" id="sec-af35">
+        <div class="u-clearfix u-sheet u-valign-top-lg u-valign-top-xl u-sheet-1"
+          style="min-height: 500px; max-width: 720px;">
+          <img
+            class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-contain u-image-default u-image-1"
+            src="images/Register_frame.png" alt="">
+          <!-- <img class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-2" src="images/MainLogo.png"
+          alt="" data-image-width="733" data-image-height="388"> -->
+          <h6 class="u-text u-text-custom-color-5 u-text-1"> </h6>
+          <div class="u-form u-form-1">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form"
+              style="padding: 0px;">
+              <div class="u-form-group u-form-name u-label-none u-form-group-1">
+                <label for="name-e9a0" class="u-label">Name</label>
+                <input type="text" id="name-e9a0" name="name"
+                  class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-white u-input-1 u-input-3"
+                  required="required" placeholder="Full Name as per NRIC">
+                <div id="nameError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px; "
+                  class="error-message-name"> </div>
+              </div>
+            </form>
+          </div>
+          <div class="u-form u-form-3">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="date" name="form"
+              style="padding: 0px;">
+              <div class="u-form-group u-label-none">
+                <label for="name-e9a0" class="u-label"></label>
+                <input type="text" id="date-e9a0" name="dateofbirth" pseudo="-webkit-datetime-edit"
+                  class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
+                  required="required" max="31-12-2030" style="text-align: left; min-width: 100%;max-width: 100%;" placeholder="Date of Birth"
+                  onmouseover="((this.type='date'))" onfocus="((this.type='date'))" onclick="(this.type='date')"
+                  onmouseenter="(this.type='date')" onmousedown="(this.type='date')" onkeydown="(this.type='date')"
+                  onkeypress="(this.type='date')" onforminput="(this.type='date')" onblur="(this.type='text')">
+                <div id="dobError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px; min-width: 10%;"
+                  class="error-message-email"></div>
+              </div>
+            </form>
+          </div>
+          <div class="u-form u-form-2">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form-1"
+              style="padding: 0px;">
+              <div class="u-form-group u-form-select u-label-none u-form-group-2">
+                <label for="select-a" class="u-label">Dropdown</label>
+                <div class="u-form-select-wrapper">
+                  <select id="select-a" name="gender"
+                    class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-white u-input-2"
+                    required="required" placeholder="Gender">
+                    <option value="" disabled selected hidden>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                    viewBox="0 0 16 16" style="fill:currentColor;color:#d48300;top: 40%;" xml:space="preserve">
+                    <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
+                  </svg>
+                  <div id="genderError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                    class="error-message-age"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="u-form u-form-2">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form-1"
+              style="padding: 0px;">
+              <div class="u-form-group u-form-select u-label-none u-form-group-2">
+                <label for="select-b" class="u-label">Dropdown</label>
+                <div class="u-form-select-wrapper">
+                  <select id="select-b" name="income"
+                    class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-white u-input-2"
+                    required="required" placeholder="Income Range">
+                    <option value="" disabled selected hidden>Income Range</option>
+                    <option value="Below RM2,000">Below RM2,000</option>
+                    <option value="RM2,000 - RM4,000">RM2,000 - RM4,000</option>
+                    <option value="RM4,000 - RM6,000">RM4,000 - RM6,000</option>
+                    <option value="RM6,000 - RM8,000">RM6,000 - RM8,000</option>
+                    <option value="RM8,000 - RM10,000">RM8,000 - RM10,000</option>
+                    <option value="RM10,000 Above">RM10,000 Above</option>
+                  </select>
+                  <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                    viewBox="0 0 16 16" style="fill:currentColor;color:#d48300;top: 40%;" xml:space="preserve">
+                    <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
+                  </svg>
+                  <div id="income_rangeError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                    class="error-message-age"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="u-form u-form-3">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="contact" name="form"
+              style="padding: 0px;">
+              <div class="u-form-group u-label-none">
+                <label for="contact-e9a0" class="u-label"></label>
+                <input type="number" id="contact-e9a0" name="contact"
+                  class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
+                  required="required" placeholder="Contact No">
+                <div id="mobile_noError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                  class="error-message-email"></div>
+              </div>
+            </form>
+          </div>
+          <div class="u-form u-form-3">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form"
+              style="padding: 0px;">
+              <div class="u-form-group u-label-none">
+                <label for="name-e9a0" class="u-label"></label>
+                <input type="text" id="name-e9a0" name="email"
+                  class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
+                  required="required" placeholder="Email">
+                <div id="emailError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                  class="error-message-email"></div>
+              </div>
+            </form>
+          </div>
+          <div class="u-form u-form-3">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="homeaddress1" name="form"
+              style="padding: 0px;">
+              <div class="u-form-group u-label-none">
+                <label for="homeaddress1-e9a0" class="u-label"></label>
+                <input type="text" id="name-e9a0" name="homeaddress1"
+                  class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
+                  required="required" placeholder="Home Address Line 1">
+                <div id="address1Error" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                  class="error-message-email"></div>
+              </div>
+            </form>
+          </div>
+          <div class="u-form u-form-3">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="homeaddress2" name="form"
+              style="padding: 0px;">
+              <div class="u-form-group u-label-none">
+                <label for="homeaddress2-e9a0" class="u-label"></label>
+                <input type="text" id="name-e9a0" name="homeaddress2"
+                  class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
+                  required="none" placeholder="Home Address Line 2">
+                <div id="address2Error" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                  class="error-message-email"></div>
+              </div>
+            </form>
+          </div>
+          <div class="u-form u-form-3">
+            <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="postcode" name="form"
+              style="padding: 0px;">
+              <div class="u-form-group u-label-none">
+                <label for="postcode-e9a0" class="u-label"></label>
+                <input type="text" id="name-e9a0" name="postcode"
+                  class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
+                  required="none" placeholder="Post Code">
+                <div id="postal_codeError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                  class="error-message-email"></div>
+              </div>
+            </form>
+            <div class="u-form u-form-3">
+              <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="city" name="form"
+                style="padding: 0px;">
+                <div class="u-form-group u-label-none">
+                  <label for="city-e9a0" class="u-label"></label>
+                  <input type="text" id="name-e9a0" name="city"
+                    class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
+                    required="none" placeholder="City">
+                  <div id="cityError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                    class="error-message-email"></div>
+                </div>
+              </form>
+            </div>
+            <div class="u-form u-form-2">
+              <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form-1"
+                style="padding: 0px;">
+                <div class="u-form-group u-form-select u-label-none u-form-group-2">
+                  <label for="select-c" class="u-label">Dropdown</label>
+                  <div class="u-form-select-wrapper">
+                    <select id="select-c" name="state"
+                      class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-white u-input-2"
+                      required="required" placeholder="State">
+                      <option value="" disabled selected hidden>State</option>
+                      <option value="Johor">Johor</option>
+                      <option value="Kedah">Kedah</option>
+                      <option value="Kelantan">Kelantan</option>
+                      <option value="Kuala Lumpur">Kuala Lumpur</option>
+                      <option value="Labuan">Labuan</option>
+                      <option value="Melaka">Melaka</option>
+                      <option value="Negeri Sembilan">Negeri Sembilan</option>
+                      <option value="Pahang">Pahang</option>
+                      <option value="Penang">Penang</option>
+                      <option value="Perak">Perak</option>
+                      <option value="Perlis">Perlis</option>
+                      <option value="Putrajaya">Putrajaya</option>
+                      <option value="Sabah">Sabah</option>
+                      <option value="Sarawak">Sarawak</option>
+                      <option value="Selangor">Selangor</option>
+                      <option value="Terengganu">Terengganu</option>
+                    </select>
+                    <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                      viewBox="0 0 16 16" style="fill:currentColor;color:#d48300;top: 40%;" xml:space="preserve">
+                      <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
+                    </svg>
+                    <div id="stateError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                      class="error-message-age"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="u-form u-form-6">
+              <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form-2"
+                style="padding: 0px;">
+                <div class="u-form-checkbox u-form-group u-form-group-6">
+                  <input style="height: 10px; border: #d48300;" type="checkbox" id="checkbox-fa2a" name="checkbox"
+                    value="On">
+                  <label for="checkbox-fa2a" class="u-custom-font u-heading-font u-label u-label-6"> I've read and agree
+                    to
+                    <a
+                      href="https://www.hlb.com.my/content/dam/hlb/my/docs/pdf/Personal/Footer/EN/privacy_notice_en.pdf?icp=hlb-en-all-footer-txt-privacy"><span><u>Terms
+                          of Service and Privacy Policy</u> </span></a> </label>
+                </div>
+              </form>
+            </div>
+            <div id="agreeError"
+              style="color: red; font-size: 10px; height: 14px; margin-bottom: -16px; left: 0; text-align: center;"
+              class="error-message-agreeError"></div>
+            <a id="playNow" class="u-border-none u-btn u-button-style u-none u-btn-1"><span
+                class="u-file-icon u-icon u-icon-1"><img onclick="return Checking();" src="images/Button_Play now.png"
+                  alt=""></span>
+            </a>
+            <!-- <img id="passImg" onclick="ShowPass();"
+          class="u-image u-image-contain u-image-default u-preserve-proportions u-image-3" src="images/Element1.png"
+          alt="" data-image-width="71" data-image-height="41">
+        <img id="cnpassImg" onclick="ShowConfirmPass();"
+          class="u-image u-image-contain u-image-default u-preserve-proportions u-image-4" src="images/Element1.png"
+          alt="" data-image-width="71" data-image-height="41"> -->
+          </div>
+      </section>
+      <section class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-55 u-dialog-section-5"
+        id="verifyPop" data-dialog-show-on="page_exit" data-dialog-show-interval="3000"
+        data-dialog-show-on-list="161976806">
+        <img class="u-image u-image-contain u-image-default u-image-1" src="images/verifyemailbgframe.png" alt=""
+          data-image-width="904" data-image-height="808">
+        <div
+          class="u-align-justify-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-dialog u-opacity u-opacity-5 u-shape-rectangle u-white u-dialog-1">
+          <div class="u-container-layout u-valign-top-lg u-valign-top-xl u-container-layout-1"
+            style="background-color: #00000000;">
+            <a href="https://nicepage.com/one-page-template" class="u-border-none u-btn u-button-style u-none u-btn-1">
+              &nbsp;</a>
+            <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-1">Thank You&nbsp;<br>For
+              Your
+              Participation
+            </h6>
+            <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2">Please check the
+              verification
+              email&nbsp;<br>in your inbox to verify your account
+            </h6>
+          </div>
+        </div>
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2"
+          src="images/closebutton.png" alt="" data-image-width="100" data-image-height="100">
+        <img onclick="BackLoginPage()" class="u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
+          src="images/closebutton.png" alt="" data-image-width="100" data-image-height="100">
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-4" src="images/emailicon.png"
+          alt="" data-image-width="321" data-image-height="321">
+      </section>
+    </div>
+  </div>
+  <script src="./deviceOrientationHandler.js"></script>
+</body>
+
+</html>
+
+
+<style>
+  .u-dialog-section-5 {
+    min-height: 1154px;
+  }
+
+  .u-dialog-section-5 .u-image-1 {
+    width: 539px;
+    height: 504px;
+    margin: 429px calc(((100% - 720px) / 2) + 85px) 0 auto;
+  }
+
+  .u-dialog-section-5 .u-dialog-1 {
+    width: 800px;
+    margin: -613px auto 0;
+  }
+
+  .u-dialog-section-5 .u-container-layout-1 {
+    padding: 30px;
+  }
+
+  .u-dialog-section-5 .u-btn-1 {
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 311px auto 0;
+    padding: 0;
+  }
+
+  .u-dialog-section-5 .u-text-1 {
+    width: auto;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin: -469px -231px 0 auto;
+  }
+
+  .u-dialog-section-5 .u-text-2 {
+    font-size: 1.875rem;
+    width: auto;
+    font-weight: 500;
+    margin: 7px -433px 0 809px;
+  }
+
+  .u-dialog-section-5 .u-icon-1 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .u-dialog-section-5 .u-image-2 {
+    width: 45px;
+    height: 45px;
+    margin: -988px calc(((100% - 340px) / 2) + 55px) 60px auto;
+  }
+
+  .u-dialog-section-5 .u-image-3 {
+    width: 65px;
+    height: 65px;
+    margin: 362px calc(((100% - 720px) / 2) + 75px) 60px auto;
+  }
+
+  .u-dialog-section-5 .u-image-4 {
+    width: 212px;
+    height: 212px;
+    margin: 111px auto 0;
+  }
+
+  @media (max-width: 2000px) {
+    .u-dialog-section-5 {
+      min-height: 1332px;
+    }
+
+    .u-dialog-section-5 .u-image-1 {
+      width: 539px;
+      margin-top: 263px;
+      margin-right: auto;
+    }
+
+    .u-dialog-section-5 .u-dialog-1 {
+      width: 100%;
+      height: auto;
+      min-height: 835px;
+      margin-top: -643px;
+    }
+
+    .u-dialog-section-5 .u-container-layout-1 {
+      padding: 0;
+    }
+
+    .u-dialog-section-5 .u-btn-1 {
+      margin-top: 717px;
+    }
+
+    .u-dialog-section-5 .u-text-1 {
+      font-size: 1.875rem;
+      width: 355px;
+      margin-top: -559px;
+      margin-right: auto;
+    }
+
+    .u-dialog-section-5 .u-text-2 {
+      font-size: 1.5rem;
+      width: 454px;
+      margin-top: 246px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .u-dialog-section-5 .u-image-2 {
+      width: 62px;
+      height: 62px;
+      margin-top: -696px;
+      margin-right: calc(((100% - 720px) / 2) + 72px);
+      margin-bottom: 0;
+    }
+
+    .u-dialog-section-5 .u-image-3 {
+      width: 62px;
+      height: 62px;
+      margin-top: -62px;
+      margin-right: calc(((100% - 720px) / 2) + 72px);
+      margin-bottom: 0;
+    }
+
+    .u-dialog-section-5 .u-image-4 {
+      width: 212px;
+      height: 212px;
+      margin-top: 68px;
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    /* .u-dialog-section-5 .u-image-1 {
+      width: 539px;
+      height: 505px;
+      margin-top: 199px;
+    }
+
+    .u-dialog-section-5 .u-dialog-1 {
+      width: 540px;
+      margin-top: -644px;
+    }
+
+    .u-dialog-section-5 .u-btn-1 {
+      margin-top: 207px;
+    }
+
+    .u-dialog-section-5 .u-text-1 {
+      width: 355px;
+      margin-top: -559px;
+      margin-right: -231px;
+    }
+
+    .u-dialog-section-5 .u-text-2 {
+      width: 454px;
+    }
+
+    .u-dialog-section-5 .u-image-2 {
+      width: 62px;
+      height: 62px;
+      margin-top: -988px;
+      margin-right: calc(((100% - 340px) / 2) + 55px);
+    }
+
+    .u-dialog-section-5 .u-image-3 {
+      width: 62px;
+      height: 62px;
+      margin-top: -62px;
+      margin-right: calc(((100% - 540px) / 2) + 72px);
+    }
+
+    .u-dialog-section-5 .u-image-4 {
+      width: 212px;
+      height: 212px;
+    } */
+  }
+
+  @media (max-width: 575px) {
+
+    .u-dialog-section-4 .u-container-layout-1 {
+      display: block;
+    }
+
+    .error-message-survey {
+      top: -211px;
+      ;
+    }
+
+    .u-dialog-section-5 .u-image-1 {
+      width: 291px;
+      height: 275px;
+      margin-top: 186px;
+    }
+
+    .u-dialog-section-5 .u-dialog-1 {
+      width: 338px;
+      margin-top: -447px;
+    }
+
+    .u-dialog-section-5 .u-btn-1 {
+      margin-top: 472px;
+    }
+
+    .u-dialog-section-5 .u-text-1 {
+      width: auto;
+      font-size: 1.125rem;
+      margin-top: -299px;
+      margin-left: -1px;
+      margin-right: -1px;
+    }
+
+    .u-dialog-section-5 .u-text-2 {
+      font-size: 0.875rem;
+      width: auto;
+      margin-top: 132px;
+      margin-left: 31px;
+      margin-right: 31px;
+    }
+
+    .u-dialog-section-5 .u-icon-1 {
+      left: auto;
+      top: 35px;
+      position: absolute;
+      right: 16px;
+    }
+
+    .u-dialog-section-5 .u-image-2 {
+      width: 62px;
+      height: 62px;
+      margin-top: -988px;
+      margin-right: calc(((100% - 340px) / 2) + 55px);
+    }
+
+    .u-dialog-section-5 .u-image-3 {
+      width: 37px;
+      height: 37px;
+      margin-top: 262px;
+      margin-right: calc(((100% - 340px) / 2) + 17px);
+    }
+
+    .u-dialog-section-5 .u-image-4 {
+      width: 128px;
+      height: 128px;
+      margin-top: 42px;
+    }
+  }
+
+  input[type="date"] {
+    display: block;
+    text-align: left;
+    
+  }
+
+  input[type=date]:focus {
+    text-align: left;
+  }
+
+  input[type=date]::before {
+    text-align: left;
+  }
+
+  input[type=date]:focus-within {
+    text-align: left;
+  }
+
+  input[type=text]:focus {
+    border: 2px solid #d48300;
+    text-align: left;
+  }
+  
+  input[type="text"] {
+    display: block;
+    text-align: left;
+  }
+  input[type=text]::before {
+    text-align: left;
+  }
+
+  input[type=text]:focus-within {
+    text-align: left;
+  }
+
+
+  input[type=checkbox]:checked:before {
+
+    color: 2px solid #d48300 !important;
+  }
+
+  input[type=password]:focus {
+    border: 2px solid #d48300;
+  }
+
+  input[type=number]:focus {
+    border: 2px solid #d48300;
+  }
+  ::-webkit-datetime-edit-year-field {
+    text-align: left;
+}
+  .u-btn-1:hover {
+    -webkit-filter: brightness(80%);
+  }
+
+  .u-image-8:hover {
+    -webkit-filter: brightness(80%);
+  }
+</style>
+
+<script>
+  // function OpenSurvey() {
+  //   if (document.getElementById('checkbox-fa2a').checked) {
+  //     document.getElementById('agreeError').innerHTML = "";
+  //     var x = document.getElementById("sec-b5d3");
+  //     x.style.display = "block";
+  //     return false;
+  //   }
+  //   else {
+  //     document.getElementById('nameError').innerHTML = "";
+  //     document.getElementById('emailError').innerHTML = "";
+  //     document.getElementById('ageError').innerHTML = "";
+  //     document.getElementById('cnpassError').innerHTML = "";
+  //     document.getElementById('agreeError').innerHTML = "Please check terms and conditions.";
+  //   }
+
+  // }
+  function OpenVerify() {
+    var x = document.getElementById("verifyPop");
+    x.style.display = "block";
+    return false;
+  }
+  var jsondatas;
+  function BackLoginPage(jsondatas) {
+    window.location.replace("./Login.html");
+  }
+  function onChange() {
+    const password = document.querySelector('input[name=password]');
+    const confirm = document.querySelector('input[name=confirmPass]');
+    if (confirm.value === password.value) {
+      confirm.setCustomValidity('');
+    } else {
+      confirm.setCustomValidity('Passwords do not match');
+    }
+  }
+  async function SubmitSurvey() {
+    const params = sessionStorage.getItem('params');
+    var name = document.querySelector('input[name=name]').value;
+    var dob = document.querySelector('input[name=dateofbirth]').value;
+    var gender = document.getElementById("select-a");
+    var income_range = document.getElementById("select-b");
+    var mobile_no = document.querySelector('input[name=contact]').value;
+    var email = document.querySelector('input[name=email]').value;
+    var address1 = document.querySelector('input[name=homeaddress1]').value;
+    var address2 = document.querySelector('input[name=homeaddress2]').value;
+    var postal_code = document.querySelector('input[name=postcode]').value;
+    var city = document.querySelector('input[name=city]').value;
+    var state = document.getElementById("select-c");
+    var myBody = {
+      "name": name,
+      "dob": dob,
+      "gender": gender.options[gender.selectedIndex].text == "Gender" ? "" : gender.options[gender.selectedIndex].text,
+      "income_range": income_range.options[income_range.selectedIndex].text == "Income Range" ? "" : income_range.options[income_range.selectedIndex].text,
+      "mobile_no": mobile_no,
+      "email": email,
+      "address1": address1,
+      "address2": address2,
+      "postal_code": postal_code,
+      "city": city,
+      "state": state.options[state.selectedIndex].text == "State" ? "" : state.options[state.selectedIndex].text,
+      "checking": false,
+      "url": (appUrl + "EmailVerified.html" + (params == null ? "" : params)),
+      "expired_url": (appUrl + "Home.html")
+    };
+    fetch(apiDomain + 'api/register',
+      {
+        method: 'POST',
+        body: JSON.stringify(myBody),
+        redirect: 'follow',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then(response => response.json())
+      .then(jsondata => {
+        var status = jsondata.status;
+        if (status === false) {
+          OpenVerify();
+        }
+        else {
+          OpenVerify();
+
+        }
+      })
+  }
+
+  async function Checking() {
+    const params = sessionStorage.getItem('params');
+    var name = document.querySelector('input[name=name]').value;
+    var dob = document.querySelector('input[name=dateofbirth]').value;
+    var gender = document.getElementById("select-a");
+    var income_range = document.getElementById("select-b");
+    var mobile_no = document.querySelector('input[name=contact]').value;
+    var email = document.querySelector('input[name=email]').value;
+    var address1 = document.querySelector('input[name=homeaddress1]').value;
+    var address2 = document.querySelector('input[name=homeaddress2]').value;
+    var postal_code = document.querySelector('input[name=postcode]').value;
+    var city = document.querySelector('input[name=city]').value;
+    var state = document.getElementById("select-c");
+
+    var myBody = {
+      "name": name,
+      "dob": dob,
+      "gender": gender.options[gender.selectedIndex].text == "Gender" ? "" : gender.options[gender.selectedIndex].text,
+      "income_range": income_range.options[income_range.selectedIndex].text == "Income Range" ? "" : income_range.options[income_range.selectedIndex].text,
+      "mobile_no": mobile_no,
+      "email": email,
+      "address1": address1,
+      "address2": address2,
+      "postal_code": postal_code,
+      "city": city,
+      "checking": true,
+      "state": state.options[state.selectedIndex].text == "State" ? "" : state.options[state.selectedIndex].text,
+      "url": (appUrl + "EmailVerified.html" + (params == null ? "" : params)),
+      "expired_url": (appUrl + "Home.html")
+    };
+    fetch(apiDomain + 'api/register',
+      {
+        method: 'POST',
+        body: JSON.stringify(myBody),
+        redirect: 'follow',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then(response => response.json())
+      .then(jsondata => {
+        var status = jsondata.status;
+        if (status === false) {
+
+          if (jsondata.errors.name) {
+            document.getElementById('nameError').innerHTML = JSON.stringify(jsondata.errors.name).replaceAll('"', "");
+          }
+          else { document.getElementById('nameError').innerHTML = "" }
+
+          if (jsondata.errors.dob) {
+            document.getElementById('dobError').innerHTML = JSON.stringify(jsondata.errors.dob).replaceAll('"', "");
+          }
+          else { document.getElementById('dobError').innerHTML = "" }
+
+          if (jsondata.errors.gender) {
+            document.getElementById('genderError').innerHTML = JSON.stringify(jsondata.errors.gender).replaceAll('"', "");
+          }
+          else { document.getElementById('genderError').innerHTML = "" }
+
+          if (jsondata.errors.income_range) {
+            document.getElementById('income_rangeError').innerHTML = JSON.stringify(jsondata.errors.income_range).replaceAll('"', "");
+          }
+          else { document.getElementById('income_rangeError').innerHTML = "" }
+
+          if (jsondata.errors.mobile_no) {
+            document.getElementById('mobile_noError').innerHTML = JSON.stringify(jsondata.errors.mobile_no).replaceAll('"', "");
+          }
+          else { document.getElementById('mobile_noError').innerHTML = "" }
+
+          if (jsondata.errors.email) {
+            document.getElementById('emailError').innerHTML = JSON.stringify(jsondata.errors.email).replaceAll('"', "");
+          }
+          else { document.getElementById('emailError').innerHTML = "" }
+
+          if (jsondata.errors.address1) {
+            document.getElementById('address1Error').innerHTML = JSON.stringify(jsondata.errors.address1).replaceAll('"', "");
+          }
+          else { document.getElementById('address1Error').innerHTML = "" }
+
+          if (jsondata.errors.address2) {
+            document.getElementById('address2Error').innerHTML = JSON.stringify(jsondata.errors.address2).replaceAll('"', "");
+          }
+          else { document.getElementById('address2Error').innerHTML = "" }
+
+          if (jsondata.errors.postal_code) {
+            document.getElementById('postal_codeError').innerHTML = JSON.stringify(jsondata.errors.postal_code).replaceAll('"', "");
+          }
+          else { document.getElementById('postal_codeError').innerHTML = "" }
+
+          if (jsondata.errors.city) {
+            document.getElementById('cityError').innerHTML = JSON.stringify(jsondata.errors.city).replaceAll('"', "");
+          }
+          else { document.getElementById('cityError').innerHTML = "" }
+
+          if (jsondata.errors.state) {
+            document.getElementById('stateError').innerHTML = JSON.stringify(jsondata.errors.state).replaceAll('"', "");
+          }
+          else { document.getElementById('stateError').innerHTML = "" }
+          // alert(JSON.stringify(jsondata.errors.error));
+        }
+        else {
+          if (document.getElementById('checkbox-fa2a').checked) {
+            SubmitSurvey();
+          }
+          else {
+            document.getElementById('nameError').innerHTML = "";
+            document.getElementById('dobError').innerHTML = "";
+            document.getElementById('genderError').innerHTML = "";
+            document.getElementById('income_rangeError').innerHTML = "";
+            document.getElementById('mobile_noError').innerHTML = "";
+            document.getElementById('emailError').innerHTML = "";
+            document.getElementById('address1Error').innerHTML = "";
+            document.getElementById('address2Error').innerHTML = "";
+            document.getElementById('postal_codeError').innerHTML = "";
+            document.getElementById('cityError').innerHTML = "";
+            document.getElementById('stateError').innerHTML = "";
+            document.getElementById('agreeError').innerHTML = "Please check terms and conditions.";
+          }
+
+
+        }
+      })
+  }
+
+</script>
