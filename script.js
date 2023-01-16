@@ -63,7 +63,7 @@ function openGoogleMap() {
 function openWaze() {
     if (coordinate == null)
         return;
-    window.open("https://www.waze.com/ul?q=" + coordinate + "&navigate=yes&zoom=10");
+    window.open("https://www.waze.com/ul?ll=" + coordinate + "&navigate=yes&zoom=10");
 }
 
 function secureWebsite() {
