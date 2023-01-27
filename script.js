@@ -1,6 +1,7 @@
 const apiDomain = "https://api-sbth.thebluelobby.com/";
 const appUrl = "https://yk-chong.github.io/sbth/";
 let coordinate = null;
+const loginPageUrl = "https://staging.simedarbyproperty.com/cny2023/luckyrabbitrushcontest/login.php";
 
 function redirectIfNoLoginRecord() {
     if (sessionStorage.getItem('token') != null) {
@@ -8,7 +9,7 @@ function redirectIfNoLoginRecord() {
     }
     const token = getCookie("rmbtoken");
     if (token == '')
-        window.location.replace("https://staging.simedarbyproperty.com/cny2023/luckyrabbitrushcontest/login.php");
+        window.location.replace(loginPageUrl);
 }
 
 function getCookie(cname) {
@@ -44,6 +45,13 @@ function storeParams() {
             document.cookie = "token=" + token + ";expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/";
         }
     }
+}
+
+function logout(){
+    document.cookie = "rmbtoken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    window.location.replace(loginPageUrl);
+    sessionStorage.removeItem('token');
 }
 
 function openMapNavBar(locationCoordinate) {
