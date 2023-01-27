@@ -8,7 +8,7 @@ function redirectIfNoLoginRecord() {
     }
     const token = getCookie("rmbtoken");
     if (token == '')
-        window.location.replace(appUrl + "Home.html");
+        window.location.replace("https://staging.simedarbyproperty.com/cny2023/luckyrabbitrushcontest/login.php");
 }
 
 function getCookie(cname) {
@@ -33,8 +33,17 @@ function storeParams() {
     //     let stationId = urlParams.get('station');
     //     sessionStorage.setItem("params", '?station=' + stationId);
     // }
-    if(urlParams != null && urlParams != '')
-        sessionStorage.setItem("params", '?'+urlParams);
+    if(urlParams != null && urlParams != ''){
+        if(urlParams.has('station') && urlParams.has('mission') && urlParams.has('ar')){
+            sessionStorage.setItem("params", '?'+urlParams);
+        }
+
+        if (urlParams.has('token')) {
+            let token = urlParams.get('token');
+            document.cookie = "rmbtoken=" + token + ";expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/";
+            document.cookie = "token=" + token + ";expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/";
+        }
+    }
 }
 
 function openMapNavBar(locationCoordinate) {
