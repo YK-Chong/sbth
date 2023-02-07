@@ -1,7 +1,9 @@
 const apiDomain = "https://api-sbth.thebluelobby.com/";
-const appUrl = "https://sbth.thebluelobby.com/";
+const appUrl = window.location.origin;
 let coordinate = null;
 const loginPageUrl = "https://staging.simedarbyproperty.com/cny2023/luckyrabbitrushcontest/login.php";
+const howToPlayLink = "https://www.simedarbyproperty.com/cny2023/";
+const prizeLink = "https://staging.simedarbyproperty.com/cny2023/luckyrabbitrushcontest/faq.php";
 
 function redirectIfNoLoginRecord() {
     if (sessionStorage.getItem('token') != null) {
@@ -43,6 +45,7 @@ function storeParams() {
             let token = urlParams.get('token');
             document.cookie = "rmbtoken=" + token + ";expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/";
             document.cookie = "token=" + token + ";expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/";
+            window.location.replace(appUrl);
         }
     }
 }
@@ -125,10 +128,6 @@ istab = function () {
     if (isTablet){
         window.location.href = "./PhoneValidate.html";
     }
-}
-
-function openLink() {
-    window.location.href = ("https://www.simedarbyproperty.com/cny2023/");
 }
 
 window.onload = onload();
