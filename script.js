@@ -1,5 +1,5 @@
 const apiDomain = "https://api-sbth.thebluelobby.com/";
-const appUrl = window.location.origin;
+const appUrl = window.location.origin + "/";
 let coordinate = null;
 const loginPageUrl = "https://staging.simedarbyproperty.com/cny2023/luckyrabbitrushcontest/login.php";
 const howToPlayLink = "https://www.simedarbyproperty.com/cny2023/";
