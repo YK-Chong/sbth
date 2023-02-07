@@ -35,11 +35,14 @@
                 If you face any issue, kindly run the webapp with the latest Google Chrome browser with the link below.
             </h6>
             <div class="copy-frame" onclick="Copy(this);">
-                <input type="readonly" value="https://sbth.thebluelobby.com/" />
+                <input id="copy-frame-input" type="readonly"/>
             </div>
             <img onclick="Agree()" class="u-image u-image-default u-image-3" src="images/buttonokay.png" alt="" data-image-width="394" data-image-height="122">            
         </section>
     </div>
+    <script>
+        document.getElementById("copy-frame-input").value = appUrl;
+    </script>
     <script src="./deviceOrientationHandler.js"></script>
 </body>
 <style>
